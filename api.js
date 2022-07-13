@@ -1,0 +1,3 @@
+var first = {
+	name: "win";
+}
