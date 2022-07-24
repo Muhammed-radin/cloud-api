@@ -84,9 +84,6 @@ function moveTouch(e) {
       //document.querySelector('.app-screen').style.top = '35px'
       document.querySelector('.app-screen').style.transform = 'translate(0,-490px)'
       console.log("swiped up");
-      setTimeout(function() {
-        document.querySelector('.app-screen').scrollTop = 0;
-      },300)
     } else {
       // swiped down
       document.querySelector('.topic').style.display = 'block'

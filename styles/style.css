@@ -52,9 +52,9 @@ colors {
 }
 
 .stick {
-  width: 100%;
+  width: 98.5%;
   position: fixed;
-  top: 0;
+  top: 0.1rem;
 }
 
 .stick i {
@@ -78,7 +78,7 @@ p {
 }
 
 .bg-img-top {
-  background: url(Picsart_22-07-16_13-04-58-427.jpg) no-repeat center center;
+  background: url(../images/Picsart_22-07-16_13-04-58-427.jpg) no-repeat center center;
   width: 100%;
   height: 500px;
   position: absolute;
@@ -167,7 +167,7 @@ hr {
 }
 
 .featured-app {
-  background: url(WhatsApp.svg.png) no-repeat center center;
+  background: url(../images/WhatsApp.svg.png) no-repeat center center;
   -webkit-background-size: 100%;
   background-size: 100%;
   max-width: 500px;
@@ -216,4 +216,18 @@ ion-icon {
   font-size: 23px;
   margin-top: .2rem;
   margin-right: .1rem;
+}
+.modal-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 2px 1px #ccc;
+  padding: .5rem 5rem;
+  z-index: 999;
+  display: none;
+  background: #fff;
+}
+.top {
+  top: 0.5rem;
 }
