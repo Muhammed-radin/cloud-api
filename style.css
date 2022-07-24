@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  font-family: "Gantari", sans-serif;
+  color: #42445A;
+}
+
+* {
+  font-family: "Gantari", sans-serif;
+  transition: 0.5s;
+}
+
+/* 
+colors {
+  green: #18c52a,#0c961a;
+  blue: #707cff,#434fcf;
+  grey: #d4d4d4,#fff;
+}
+*/
+.stick {
+  padding: .2rem .2rem;
+  height: 2rem;
+  background-image: linear-gradient(to bottom, #D4D4D4, #fff);
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+  box-shadow: 0px 0px 5px #919191
+}
+.tag {
+  padding: .4rem .7rem;
+  border-radius: 30px;
+  border: 1px solid;
+  font-size: 12px;
+  width: max-content;
+  color: #42445A;
+  margin-right: .2rem;
+  margin: .2rem;
+}
+.topic .tag {
+  color: #fff;
+}
+.topic .tag:hover {
+  background: #fff;
+  color: #42445A;
+}
+.tag:hover {
+  background: #42445A;
+  color: #fff;
+}
+
+.stick {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.stick i {
+  margin-left: .2rem;
+  margin-right: .2rem;
+}
+
+.position-right {
+  position: absolute;
+  right: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.1rem;
+}
+
+.bg-img-top {
+  background: url(Picsart_22-07-16_13-04-58-427.jpg) no-repeat center center;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  filter: blur(0.5px);
+  box-shadow: 0px 0px 80px 10px #000000 inset
+}
+
+.bg-shader {
+  width: 100%;
+  height: 500px;
+  filter: blur(0.5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-image: linear-gradient(to bottom, #ffffff90, #42445A00 40%, #101010E3);
+}
+
+.topic-box {
+  color: #fff;
+  position: absolute;
+  bottom: -480px;
+  left: 0.6rem;
+}
+
+.topic {
+  position: relative;
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.app-screen {
+  position: absolute;
+  width: 100%;
+  top: 535px;
+  margin: .5rem;
+}
+
+hr {
+  color: #cccccc80;
+  width: 95%;
+  border-radius: 50%;
+  border: .2px solid;
+}
+
+.app-icon {
+  border: 1px solid #ccc;
+  width: max-content;
+  height: max-content;
+  padding: .5rem .5rem;
+  margin: .3em;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.app-icon p {
+  font-size: 12px
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.app-icon:hover {
+  background: #cccccc50;
+  border: 1px solid #ccc;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.app-icon:focus {
+  border: 1px solid #707cff;
+}
+
+.featured-app {
+  background: url(WhatsApp.svg.png) no-repeat center center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  max-width: 500px;
+  height: max-content;
+  min-width: 270px;
+  min-height: 240px;
+  padding: .4rem .4rem;
+  display: flex;
+  flex-direction: row;
+  margin: .6rem;
+  /*border: 1px solid #ccc;*/
+  font-size: 10pt;
+  border-radius: 5px;
+  box-shadow: 0 0 9px #ccc;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-app .icon {
+  width: 80px;
+  height: 80px;
+}
+#tags {
+  display: flex none;
+}
+center a {
+  text-decoration: none;
+  color: #4050FF;
+  margin: .3rem;
+  padding: .5rem 3rem;
+  width: 100%;
+}
+footer {
+  background: #42445A;
+  color: #fff;
+  padding: .8rem 0rem;
+  margin: 0;
+  width: 100%;
+  margin-left: -0.5rem;
+  margin-top: .5rem;
+}
+ion-icon {
+  font-size: 23px;
+  margin-top: .2rem;
+  margin-right: .1rem;
+}
