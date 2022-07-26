@@ -106,3 +106,16 @@ function moveTouch(e) {
   e.preventDefault();
 
 };
+
+const api_url = 'https://muhammed-radin.github.io/eomapad/data.js'
+
+async function getData() {
+  const response = await fetch(api_url);
+  console.log(response)
+  const data = await response.text();
+  var c = 'const app = '+data;
+  eval(c)
+  console.log(app.name);
+}
+
+getData()
