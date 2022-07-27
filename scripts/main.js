@@ -107,7 +107,7 @@ function moveTouch(e) {
 
 };
 
-const api_url = 'https://muhammed-radin.github.io/eomapad/data.js'
+const api_url = 'https://muhammed-radin.github.io/ag-api/data.js'
 
 async function getData() {
   const response = await fetch(api_url);
