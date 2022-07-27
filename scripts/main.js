@@ -107,19 +107,16 @@ function moveTouch(e) {
 
 };
 
-const api_url = 'https://muhammed-radin.github.io/ag-api/data.js'
-
-async function getData() {
-  try {
-    const response = await fetch(api_url);
-    console.log(response)
-    const data = await response.text();
-    var c = 'var app = ' + data;
-    eval(c)
-    console.log(app.name);
-  } catch (err) {
-    alert(err);
-  }
+function id(elementid){
+  return document.getElementById(elementid)
+}
+function $(query){
+  return document.querySelector(query)
 }
 
-getData();
+id('menuBtn').onclick = function () {
+  $('.modal-menu').style.display = 'block'
+}
+id('closeBtn').onclick = function () {
+  $('.modal-menu').style.display = 'none'
+}
