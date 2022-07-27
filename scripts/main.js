@@ -110,12 +110,16 @@ function moveTouch(e) {
 const api_url = 'https://muhammed-radin.github.io/ag-api/data.js'
 
 async function getData() {
-  const response = await fetch(api_url);
-  console.log(response)
-  const data = await response.text();
-  var c = 'const app = '+data;
-  eval(c)
-  console.log(app.name);
+  try {
+    const response = await fetch(api_url);
+    console.log(response)
+    const data = await response.text();
+    var c = 'var app = ' + data;
+    eval(c)
+    console.log(app.name);
+  } catch (err) {
+    alert(err);
+  }
 }
 
-getData()
+getData();
