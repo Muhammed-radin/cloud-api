@@ -228,6 +228,7 @@ ion-icon {
   background: #fff;
   height: 500px;
   width: 80%;
+  display: none;
 }
 .modal-menu i {
   font-size: 16px
