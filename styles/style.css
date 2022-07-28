@@ -23,7 +23,7 @@ colors {
 .stick {
   padding: 0.2rem 0.2rem;
   height: 2rem;
-  background-image: linear-gradient(to bottom, #d4d4d4, #fff);
+  background: #fff;
   display: flex;
   flex-direction: row;
   z-index: 9999;
@@ -54,7 +54,7 @@ colors {
 .stick {
   width: 100%;
   position: fixed;
-  top: 0.1rem;
+  top: 0.01rem;
 }
 
 .stick i {
