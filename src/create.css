@@ -1,0 +1,80 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+input,
+select,
+textarea {
+  width: 300px;
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  outline: none;
+  border: 0.5px solid rgba(99, 96, 255, 0.24);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: rgba(80, 77, 255, 0.103);
+}
+#tagbox {
+    max-width: 300px;
+}
+#tagbox::-webkit-scrollbar,.row::-webkit-scrollbar  {
+    display: none;
+}
+.column {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: column;
+}
+
+button {
+  background: #707cff;
+  border: 0ch;
+  outline: none;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  width: 100px;
+  margin: 0.5rem;
+}
+button:hover {
+  background: #434fcf;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+.tag {
+  padding: 0.4rem 0.9rem;
+  border-radius: 30px;
+  border: 1px solid;
+  font-size: 12px;
+  width: max-content;
+  color: #434fcf;
+  cursor: pointer;
+  margin-right: 0.2rem;
+  margin: 0.2rem;
+}
+.row {
+    display: flex;
+    max-width: 300px;
+    flex-direction: row;
+    overflow: scroll;
+}
+.box {
+  border: 0.5px solid rgba(99, 96, 255, 0.24);
+}
+.box:hover {
+  background: rgba(80, 77, 255, 0.103);
+}
+.tag:hover {
+  background: #707cff40;
+  color: #434fcf;
+}
+p {
+  margin: 0;
+}

@@ -7,49 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        input,select {
-            width: 300px;
-            margin: 0.2rem;
-        }
-        .column {
-            display: flex;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            flex-direction: column;
-        }
-    </style>
+    <link rel="stylesheet" href="create.css">
 </head>
 
 <body>
     <center>
         <h3>Create App</h3>
     </center>
-    <hr>
     <center>
         <div class="column">
-            <input type="text" placeholder="name" id="appName">
-            <input type="text" placeholder="devloper name" id="devName">
-            <input type="number" id="version" placeholder="version">
-            <input type="text" id="tag" placeholder="tags">
-            <input type="url" id="src" placeholder="source">
-            <select name="" id="type">
+            <input type="text" placeholder="name" id="appName" name="name">
+            <input type="text" placeholder="devloper name" id="devName" name="dev">
+            <input type="number" id="version" placeholder="version" name="vers">
+            <textarea name="" id="des" cols="30" rows="10" placeholder="description here" name="des"></textarea>
+            <input type="url" id="src" placeholder="source" name="url">
+            <select name="type" id="type">
                 <option value="url">link</option>
                 <option value="exe">exe</option>
                 <option value="apk">apk</option>
                 <option value="ios">ios</option>
                 <option value="deb">deb</option>
             </select>
+            <div id="links">
+            </div>
+            <input type="text" id="tag" placeholder="tags">
+            <div class="box row" id="tagbox">
+            </div>
             <input type="url" id="logo" placeholder="logo url">
             <input type="url" id="thumb" placeholder="highlight image url">
             <input type="url" id="screen" placeholder="screenshot link">
+            <div class="box">
+                <p>images</p>
+                <hr>
+                <div id="showImages" class="row">
+                </div>
+            </div>
+            <center>
+                <button type="submit">Create</button>
+            </center>
         </div>
     </center>
+    <!-- <form action="mailto:example@gmail.com" method="post" enctype="text/plain">
+        name:<input type="text" name="nom" id="nome">
+        <button type="sumbit">sumbit</button>
+    </form> -->
+    <script src="create.js"></script>
 </body>
 
 </html>
