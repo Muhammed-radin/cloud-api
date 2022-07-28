@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input,select {
+            width: 300px;
+            margin: 0.2rem;
+        }
+        .column {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>Create App</h3>
+    </center>
+    <hr>
+    <center>
+        <div class="column">
+            <input type="text" placeholder="name" id="appName">
+            <input type="text" placeholder="devloper name" id="devName">
+            <input type="number" id="version" placeholder="version">
+            <input type="text" id="tag" placeholder="tags">
+            <input type="url" id="src" placeholder="source">
+            <select name="" id="type">
+                <option value="url">link</option>
+                <option value="exe">exe</option>
+                <option value="apk">apk</option>
+                <option value="ios">ios</option>
+                <option value="deb">deb</option>
+            </select>
+            <input type="url" id="logo" placeholder="logo url">
+            <input type="url" id="thumb" placeholder="highlight image url">
+            <input type="url" id="screen" placeholder="screenshot link">
+        </div>
+    </center>
+</body>
+
+</html>
